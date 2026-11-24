@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "noEmit": false,
+    "incremental": false,
+    "rootDir": "../src",
+    "outDir": "../.cache/test-build",
+    "plugins": []
+  },
+  "include": ["../src/services/postApi.ts", "../src/lib/postValidation.ts", "../src/lib/postListQuery.ts", "../src/lib/postVisitSession.ts", "../src/types/post.ts"],
+  "exclude": ["../node_modules"]
+}
